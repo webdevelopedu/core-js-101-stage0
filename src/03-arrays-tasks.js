@@ -159,8 +159,10 @@ function insertItem(arr, item, index) {
  *    [ 1, 3, 4, 5 ], 2 => [ 1, 3 ]
  *    [ 'a', 'b', 'c', 'd'], 3  => [ 'a', 'b', 'c' ]
  */
-function getHead(/* arr, n */) {
-  throw new Error('Not implemented');
+function getHead(arr, n) {
+  const firstElementIndex = 0;
+  const arrayHead = arr.slice(firstElementIndex, n);
+  return arrayHead;
 }
 
 /**
