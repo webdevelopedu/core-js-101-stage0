@@ -175,8 +175,10 @@ function getHead(arr, n) {
  *    [ 1, 3, 4, 5 ], 2  => [ 4, 5 ]
  *    [ 'a', 'b', 'c', 'd'], 3  => [ 'b', 'c', 'd' ]
  */
-function getTail(/* arr, n */) {
-  throw new Error('Not implemented');
+function getTail(arr, n) {
+  const firstElementFromEndIndex = n;
+  const firstElementNegativeIndex = -firstElementFromEndIndex;
+  return arr.slice(firstElementNegativeIndex);
 }
 
 /**
